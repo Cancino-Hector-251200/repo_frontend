@@ -1,8 +1,8 @@
 // URLs de los dos microservicios independientes.
 // El frontend nunca llama directamente a OpenWeatherMap: siempre pasa
 // por su propio gateway, que es quien protege la API key.
-const URL_GATEWAY_CLIMA = 'http://localhost:4000';
-const URL_SERVICIO_HISTORIAL = 'http://localhost:5000';
+const URL_GATEWAY_CLIMA = 'https://repobackend-production-8f80.up.railway.app';
+const URL_SERVICIO_HISTORIAL = 'https://repo-historial-service.onrender.com';
 
 const formulario = document.getElementById('formBusqueda');
 const inputCiudad = document.getElementById('inputCiudad');
