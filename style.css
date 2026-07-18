@@ -1,0 +1,96 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f1f1ee;
+  color: #222;
+  margin: 0;
+  padding: 40px 16px;
+}
+
+.contenedor {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+h1 { margin-bottom: 4px; }
+.subtitulo { color: #666; margin-top: 0; font-size: 14px; }
+
+.formulario {
+  display: flex;
+  gap: 8px;
+  margin: 24px 0;
+}
+
+.formulario input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.formulario button, .btn-secundario {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #185fa5;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-secundario {
+  background: #5f5e5a;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.resultado {
+  min-height: 60px;
+  margin-bottom: 32px;
+}
+
+.tarjeta-clima {
+  background: white;
+  border: 1px solid #e0e0dc;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.tarjeta-clima h3 { margin-top: 0; }
+
+.mensaje-error {
+  background: #fcebeb;
+  color: #791f1f;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.mensaje-cargando {
+  color: #666;
+  font-size: 14px;
+}
+
+.historial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lista-historial {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-historial li {
+  background: white;
+  border: 1px solid #e0e0dc;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}

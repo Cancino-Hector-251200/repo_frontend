@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima con Historial — SOA Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Consulta del clima</h1>
+    <p class="subtitulo">Arquitectura desacoplada: frontend, gateway de clima e historial son servicios independientes.</p>
+
+    <form id="formBusqueda" class="formulario">
+      <input type="text" id="inputCiudad" placeholder="Escribe una ciudad, ej. Tuxtla Gutiérrez" required>
+      <button type="submit">Buscar</button>
+    </form>
+
+    <section id="estadoResultado" class="resultado"></section>
+
+    <section class="historial">
+      <div class="historial-header">
+        <h2>Historial de búsquedas</h2>
+        <button id="btnRefrescarHistorial" class="btn-secundario">Actualizar</button>
+      </div>
+      <ul id="listaHistorial" class="lista-historial"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
